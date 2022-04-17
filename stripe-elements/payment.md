@@ -72,7 +72,7 @@ export default {
     async generatePaymentIntent () {
       const paymentIntent = await apiCallToGeneratePaymentIntent(); // this is just a dummy, create your own API call
       this.elementsOptions.clientSecret = paymentIntent.client_secret;
-    }
+    },
     pay () {
       this.$refs.paymentRef.submit();
     },
